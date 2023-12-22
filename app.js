@@ -16,6 +16,23 @@ function greetUser(){
     document.write("Hi! " + theirBand + " is one of our favorites too!");
 }
 
+
+let response = prompt('Question: Are the best movies from the 90s?');
+    
+while (response.toLowerCase() != 'yes'){
+    response = prompt('wrong! Try again!');
+}
+
+
+function rateMyPage(){
+    let rating = prompt("How many stars would you rate my page? 1-5");
+
+    for (let i = 0; i < rating; i++){
+        document.write("<img class='loop-img' src='star.png' alt='5 pointed yellow star in the style of a cartoon' />");
+    }
+}
+
+    
 // function coolOrNo(){
 //     const movieFan = prompt("Are the best movies from the 90s?")
 // console.log(movieFan);
@@ -55,21 +72,6 @@ function greetUser(){
 //     }
 // }
 
-let response = prompt('Question: Are the best movies from the 90s?');
-
-while (response.toLowerCase() != 'yes'){
-    response = prompt('wrong! Try again!');
-}
-
-function rateMyPage(){
-    let rating = prompt("How many stars would you rate my page? 1-5");
-
-    for (let i = 0; i < rating; i++){
-        document.write("<img class='loop-img' src='star.png' alt='5 pointed yellow star in the style of a cartoon' />");
-    }
-}
-
-    
 
     // function coolOrNoWarn(){
     //     const movieFan2 = prompt("One more chance! Are the best movies from the 90's?")
